@@ -1,25 +1,28 @@
-console.log("Hello git");
-console.log(2);
+//JavaScript Problems and Challenges
 
-console.log("I am third one :)");
+// 1 -) Find the maximum number of the array
+const functionOne = (a) => {
 
-const arrayMethod = (a, b) => {
-    return a * b;
+    return Math.max(...a);
 }
+const numberArray = [-344, -2, 100];
+const maxNumber = functionOne(numberArray);
+const maxNumberTwo = functionOne([-10, 0, 1]);
+//console.log(maxNumber, " - ", maxNumberTwo);
 
-const result = arrayMethod(2,3);
-console.log(result); 
-
-function forEachForArrayElements (x, y, z) {
-    return x * y - z;
+// 2 -) Write a function that takes two numbers (a and b) as arguments
+// If a is smaller than b, divide a by b
+// Otherwise, multiply both numbers
+// Return the resulting value
+const functionTwo = (a, b) => {
+    let result;
+    if (a < b) {
+        result = a / b;
+    } else {
+        result = a * b;
+    }
+    return result;
+    //return a < b  ? a / b : a * b;  <- Another way.
 }
-const resultTwo = forEachForArrayElements(1,2,3);
-console.log(resultTwo);
-
-
-
-const newFunction = () => {
-    console.log(45);
-}
-
-newFunction();
+const ifAB = functionTwo(30, 20);
+console.log(ifAB);
