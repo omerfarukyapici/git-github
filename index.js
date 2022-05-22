@@ -32,4 +32,13 @@ const ifAB = functionTwo(30, 20);
 const returnTypeOfArgument = (a) => {
     return typeof(a);
 }
-console.log(returnTypeOfArgument(1));
+//console.log(returnTypeOfArgument(true));
+
+// 4 -) Write a function that takes a string (a) and a number (n) as argument
+// Return the nth character of 'a'
+const returnNthCharacter = (a, n) => {
+
+    return a[n - 1];
+}
+console.log(returnNthCharacter("asdf", 4));
+
